@@ -68,10 +68,13 @@ Pruebas para ejecutar en el código del usuario, en pares de lenguaje de marcado
 Código para prueba uno
 ```
 
-Más instrucciones en la sintaxis de lenguaje de marcado
+If you want dynamic output based on the user's code, --fcc-expected-- and --fcc-actual-- will be replaced with the expected and actual values of the test's assertion:
 
 ```js
-Más código
+assert.equal(
+  'this will replace --fcc-actual--',
+  'this will replace --fcc-expected--'
+);
 ```
 
 # --seed--
